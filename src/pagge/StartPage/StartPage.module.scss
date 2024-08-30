@@ -1,0 +1,18 @@
+.StartPage{
+    .btn{
+        padding: 15px;
+        font-size: 24px;
+        background-color: inherit;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 400px;
+        cursor: pointer;
+        color: #ffffff;
+        background-color: #3152f7;
+        &:hover{
+            background-color: #1938d1;
+            transition: background-color 0.3s;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.Magazin {
+    padding: 20px;
+    background-color: inherit; // Светлый фон для контента
+    border-radius: 8px; // Закругленные углы
+   
+
+    h1 {
+        font-size: 64px;
+        color: #ffffff; // Темный цвет текста
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 52px;
+        color: #ffffff; // Более светлый цвет для подзаголовка
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 32px;
+        color: #ffffff; // Цвет для общей стоимости
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: start;
+        display: block;
+        justify-content: start;
+
+        li {
+            font-size: 28px; // Уменьшенный размер шрифта для списка
+            margin: 10px 0; // Отступы между пунктами
+            padding: 10px;
+            background-color: #52a0d3; // Белый фон для пунктов
+            border: 1px solid #ddd; // Легкая рамка
+            border-radius: 4px; // Закругленные углы для пунктов
+            transition: background-color 0.3s; // Плавный переход для фона
+
+            &:hover {
+                background-color: #f0f0f0; // Изменение фона при наведении
+                color: #000;
+            }
+
+            label {
+                display: flex;
+                align-items: center; // Центрирование текста и чекбокса
+            }
+
+            input[type="checkbox"] {
+                margin-right: 10px; // Отступ между чекбоксом и текстом
+                padding: 10px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

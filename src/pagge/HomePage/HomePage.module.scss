@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #3f5efb;
+    background: radial-gradient(circle, #112fc3 0%, rgb(2, 3, 71) 100%);
+    background-color: #042b56;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BlockName{
+    width: 420px;
+    display: flex;
+    align-items: start;
+}
+
+.popupCont{ 
+   .otvet{
+        font-size: 32px;
+    }
+    button{
+    padding: 15px;
+    font-size: 24px;
+    background-color: inherit;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #3152f7;
+    &:hover{
+        background-color: #1938d1;
+        transition: background-color 0.3s;
+    }
+}
+}
+.question_button {
+    padding: 40px 55px;
+    font-size: 52px;
+    background-color: inherit;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #ffffff;
+}
+
+.question_button:hover {
+    background-color: #feaaaa2a;
+}
+
+.popupCont{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b9d;
+    background: radial-gradient(circle, #112fc3 0%, rgb(2, 3, 71) 100%);
+
+    .popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+        height: 200px;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 50px;
+      
+        z-index: 1000;
+        button{
+          padding: 30px 50px;
+        }
+        h2{
+            font-size: 64px;
+        }
+    }
+}
+
+
+.score {
+    font-size: 32px;
+    margin-top: 30px;
+    position: absolute;
+    right: 58px;
+    top: 5px;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+    .QuestionBlock{
+        display: flex;
+        align-items: center;
+        border: 1px solid #f6ff00;
+        .butttonBlock{
+          padding: 5px;
+          border: 1px solid #f6ff00;
+            button{
+                margin: 10px;
+            }
+        }
+        .popupVizibleBlock{
+            width: 100%;
+
+            h3{
+                font-size: 32px!important;
+            }
+        }
+    }
+    .BlockName{
+    
+     font-size: 30px;
+     width: 450px;
+     padding: 15px;
+    }
+}
+
+.popupTimer{
+    display: block;
+   /* Стили для элемента progress */
+ margin-top: -100px;
+progress {
+    width: 100%; /* Ширина прогресс-бара */
+    height: 20px; /* Высота прогресс-бара */
+    border-radius: 10px; /* Закругленные углы */
+    background-color: #e0e0e0; /* Цвет фона */
+}
+
+/* Стили для заполненной части прогресс-бара */
+progress::-webkit-progress-bar {
+    background-color: #e0e0e0; /* Цвет фона прогресс-бара */
+    border-radius: 10px; /* Закругленные углы */
+}
+
+progress::-webkit-progress-value {
+    background-color: #49aa84; /* Цвет заполненной части */
+    border-radius: 10px; /* Закругленные углы */
+}
+
+progress::-moz-progress-bar {
+    background-color: #49aa84; /* Цвет заполненной части для Firefox */
+    border-radius: 10px; /* Закругленные углы */
+}
+    .popupTimerBlock{
+        // position: absolute;
+        // bottom: 0px;
+        // width: 60%;
+        position: relative;
+        top: 100px;
+        button{
+            position: relative;
+            top: -50px;
+        }
+    }
+    p{
+        font-size: 64px;
+    }
+    h2{
+        color: #dbde8f;
+    }
+}
+
+.FinslWin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+}
+.animated1 {
+    position: relative;
+    animation: goUp 3s linear infinite; /* Задаем анимацию */ 
+    left: -400px;
+}
+.animated2 {
+    position: relative;
+    animation: goUp 3s linear infinite; /* Задаем анимацию */ 
+    right: -400px;
+}
+
+@keyframes goUp {
+    0% {
+        transform: translateY(0); /* Начальная позиция */
+    }
+    100% {
+        transform: translateY(-160vh); /* Перемещение вверх на 100% высоты экрана */
+    }
+}
+
+
+.catPaket{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin-top: -100px;
+    background: radial-gradient(circle, #112fc3 0%, rgb(2, 3, 71) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 80%;
+        height: 80%;
+        cursor: pointer;
+        transition: 0.1s linear all;
+        &:hover{
+          opacity: 0.8;
+        }
+    }
+}
+
+.btn{
+    padding: 15px;
+    font-size: 24px;
+    background-color: inherit;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #3152f7;
+    &:hover{
+        background-color: #1938d1;
+        transition: background-color 0.3s;
+    }
+}
